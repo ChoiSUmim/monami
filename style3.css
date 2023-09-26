@@ -1,0 +1,275 @@
+/* 메뉴바 */
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Global styles */
+body {
+    font-family:'Pretendard-Regular';
+    background-color: #ffffff;
+}
+
+/* 헤더 스타일 */
+header {
+    background-color: #d1d1d1;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap; /* 메뉴 항목이 넘칠 경우 줄 바꿈 */
+}
+
+.logo a {
+    text-decoration: none;
+    color: #f1f1f1;
+    font-size: 24px;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    text-align: center;
+}
+
+.menu li {
+    margin-right: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 16px;
+}
+
+/* 미디어 쿼리 추가: 화면 너비가 700px 이상일 때 */
+@media (min-width: 800px) {
+    .navbar {
+        justify-content: space-between; /* 로고와 메뉴 사이 간격을 최대화 */
+    }
+
+    .menu {
+        margin-left: 50px; /* 로고와 메뉴 사이 간격을 50px로 설정 */
+    }
+}
+
+/* 반응형 상자 */
+/* 기본 스타일 */
+.responsive-box {
+    width: 100%; /* 화면 너비에 맞게 확장 */
+    max-width: 1800px; /* 최대 너비 설정 */
+    height: auto; /* 높이 자동 조정 */
+    padding: 20px;
+    background-color: #ffffff;
+    text-align: center;
+    margin: 0 auto; /* 가운데 정렬 */
+}
+
+/* 이미지 스타일 */
+.responsive-box img {
+    max-width: 100%; /* 이미지 최대 너비 설정 */
+    height: auto; /* 이미지 높이 자동 조정 */
+}
+
+/* 미디어 쿼리를 사용하여 화면 크기에 따라 스타일 변경 */
+@media (max-width: 768px) {
+    .responsive-box {
+        max-width: 100%; /* 화면 크기보다 작을 때 최대 너비 100%로 변경 */
+    }
+}
+
+.responsive-box2 {
+    width: 100%; /* 화면 너비에 맞게 확장 */
+    max-width: 1000px; /* 최대 너비 설정 */
+    height: auto; /* 높이 자동 조정 */
+    padding: 20px;
+    background-color: #e6e3bc;
+    text-align: center;
+    margin: 0 auto; /* 가운데 정렬 */
+}
+
+.responsive-box3 {
+    width: 100%; /* 화면 너비에 맞게 확장 */
+    max-width: 1000px; /* 최대 너비 설정 */
+    height: auto; /* 높이 자동 조정 */
+    padding: 20px;
+    background-color: #ffffff;
+    text-align: center;
+    margin: 0 auto; /* 가운데 정렬 */
+}
+
+/* 이미지 스타일 */
+.responsive-box2 img {
+    max-width: 100%; /* 이미지 최대 너비 설정 */
+    height: auto; /* 이미지 높이 자동 조정 */
+}
+
+/* 이미지 컨테이너 스타일 */
+.image-container {
+    max-width: 100%; /* 화면 너비에 맞게 조정 */
+    padding: 20px; /* 이미지 간의 간격 설정 */
+    background-color: #ffffff;
+    text-align: center;
+}
+
+/* 이미지 스타일 */
+.image-container img {
+    max-width: 700px; /* 이미지 최대 너비 설정 */
+    height: auto; /* 이미지 높이 자동 조정 */
+}
+
+/* 미디어 쿼리를 사용하여 화면 크기에 따라 스타일 변경 */
+@media (max-width: 768px) {
+    .image-container {
+        flex-direction: column; /* 화면 너비가 768px 이하일 때 이미지를 세로로 배치 */
+    }
+}
+
+.image-container img {
+    margin-bottom: 50px; /* 이미지 아래에 50px의 공간 추가 */
+}
+}
+/* 이미지 2와 이미지 1 사이의 간격 조정 */
+.image-container img + img {
+    margin-left: 100px; /* 이미지 2와 이미지 1 사이에 100px의 간격 설정 */
+}
+
+
+
+.container {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.box {
+    
+    width: 600px;
+    
+    margin: 20px;
+    font-weight: bold; 
+    font-size: 18px;
+    
+}
+
+.box2 {
+    
+    width: 400px;
+    
+    margin: 20px;
+    font-weight: bold; 
+    font-size: 18px;
+}
+
+.box3 {
+    
+    width: 400px;
+  
+    margin: 20px;
+    font-weight: bold; 
+    font-size: 18px;
+    display: flex; /* 플렉스박스 레이아웃 사용 */
+    justify-content: center; /* 수평 가운데 정렬 */
+    align-items: center; /* 수직 가운데 정렬 */
+}
+
+.line{
+    display: flex;
+    flex-basis:100%;
+    align-items: center;
+    color:rgba(0, 0, 0, 0.35);
+    font-size: 14px;
+    margin:8px 0px;
+    max-width: 1800px; 
+    margin: 0 auto;
+}
+
+.line::before{
+    content: "";
+    flex-grow:1;
+    margin:0px 30px;
+    background: rgba(0, 0, 0, 0.35);
+    height: 1px;
+    line-height: 0px;
+    max-width: 1800px; 
+    margin: 0 auto;
+}
+.line::after{
+    content: "";
+    flex-grow:1;
+    margin:0px 30px;
+    background: rgba(0, 0, 0, 0.35);
+    height: 1px;
+    line-height: 0px;
+    max-width: 1800px; 
+    margin: 0 auto;
+    
+}
+
+
+
+/* 기본 스타일 */
+.rounded-iframe {
+    width: 800px;
+    height: 500px;
+    border-radius: 15px;
+    overflow: hidden;
+    margin: 20px;
+    margin: 0 auto;
+}
+
+/* iframe 스타일 */
+.rounded-iframe iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    margin: 20px;
+    margin: 0 auto;
+}
+
+/* 780px 이하 화면 크기에 대한 스타일 */
+@media (max-width: 780px) {
+    .rounded-iframe {
+        width: 100%; /* 화면 너비에 맞게 100%로 설정 */
+        padding-top: 100px;
+    }
+}
+
+a {
+    color: #868686; /* 여기에 원하는 색상 코드를 입력 */
+    text-decoration: none; /* 밑줄 제거 (선택사항) */
+}
+
+/* div 요소의 스타일 */
+.rounded-div {
+    width: 180px;
+    height: 42px;
+    border-radius: 30px; /* 모서리를 둥글게 만들기 위해 사용하는 속성 */
+    cursor: pointer; /* 커서 모양을 손가락으로 변경 (선택사항) */
+    position: relative;
+    text-align: center;
+    border: 2px solid #000;
+    padding : 8px 0;
+    font-size: 15px;
+}
+
+
+
+
