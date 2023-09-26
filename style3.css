@@ -261,7 +261,7 @@ a {
 .rounded-div {
     width: 180px;
     height: 42px;
-    border-radius: 30px; /* 모서리를 둥글게 만들기 위해 사용하는 속성 */
+    
     cursor: pointer; /* 커서 모양을 손가락으로 변경 (선택사항) */
     position: relative;
     text-align: center;
