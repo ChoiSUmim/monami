@@ -229,7 +229,7 @@ header {
 .rounded-iframe {
     width: 800px;
     height: 500px;
-    border-radius: 15px;
+    
     overflow: hidden;
     margin: 20px;
     margin: 0 auto;
